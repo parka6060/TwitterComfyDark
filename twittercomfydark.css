@@ -1,0 +1,258 @@
+/*
+TWITTER COMFORTABLE DARK
+
+This is a quick slap together of a bunch of small twitter tweaks I've made.
+Removes unessasary elements such as gork, premium, communities, and the annoying right pannel.
+Does a simple recolor and restyle of the colors to be softer and less blue.
+
+@ENINABOX
+*/
+
+
+
+/*Custom Color Scheme*/
+:root {
+    --custom-bg: rgb(16, 15, 15);
+    --custom-bg1: rgb(40, 39, 38);
+    --custom-hl: rgb(36, 131, 123);
+}
+
+body {
+    background-color: var(--custom-bg) !important;
+}
+
+/*Hide Unessasary Navigation Items*/
+.r-6koalj:nth-child(2),
+.r-6koalj:nth-child(5),
+/*Gork AI*/
+.r-6koalj:nth-child(6),
+/*Lists*/
+.r-6koalj:nth-child(7),
+/*Bookmarks*/
+.r-6koalj:nth-child(8),
+/*Premium +*/
+.r-6koalj:nth-child(9) {
+    /*Communities*/
+    display: none;
+}
+
+/* Change Message Box max Height*/
+.r-h06w64 {
+    height: 93vh !important;
+}
+.r-uc7nor {
+    max-height: 100%;
+}
+
+.r-hvns9x {
+    max-width: 100%;
+}
+.css-175oi2r.r-173mn98.r-1mf7evn.r-hvns9x.r-1jte41z.r-y42jk5 {
+    width: 35%!important;
+}
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div.css-175oi2r.r-yfoy6g.r-16y2uox.r-1jgb5lz.r-13qz1uu.r-1ye8kvj {
+    max-width: 100%;
+}
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div > div > div.css-175oi2r.r-150rngu.r-yfoy6g.r-11yh6sk.r-1qk6wnv.r-c67a83.r-ouzzow.r-16y2uox.r-1pi2tsx > div.css-175oi2r.r-16y2uox.r-hbs49y.r-1h0z5md.r-1jgb5lz.r-13qz1uu.r-ymttw5.r-1ye8kvj {
+    border-radius: 30px;
+    max-width: 100%;
+    background-color: rgba(16, 15, 15, .0);
+    background-color: rgb(40, 39, 38);
+}
+
+#layers > div > div:nth-child(1) > div > div > div > div {
+    border-radius: 30px;
+    max-width: 100%;
+}
+
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div.css-175oi2r.r-yfoy6g.r-16y2uox.r-1jgb5lz.r-13qz1uu.r-1ye8kvj > section > div > div > div:nth-child(n) > div > div > div,
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div.css-175oi2r.r-yfoy6g.r-16y2uox.r-1jgb5lz.r-13qz1uu.r-1ye8kvj > section > div > div,
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div > div > div.css-175oi2r.r-150rngu.r-yfoy6g.r-11yh6sk.r-1qk6wnv.r-c67a83.r-ouzzow.r-16y2uox.r-1pi2tsx > div.css-175oi2r.r-gtdqiz.r-ipm5af.r-136ojw6 > div > div > div > div,
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div > div,
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div.css-175oi2r.r-gtdqiz.r-ipm5af.r-136ojw6 > div > div > div > div {
+    background-color: rgba(16, 15, 15, .0);
+    background-color: rgb(40, 39, 38);
+}
+
+.r-xnswec,
+.r-o298n2,
+#layers > div > div:nth-child(1) > div > div > div > div > div > div > div > div > div.css-175oi2r.r-150rngu.r-yfoy6g.r-11yh6sk.r-1qk6wnv.r-c67a83.r-ouzzow.r-16y2uox.r-1pi2tsx > div.css-175oi2r.r-16y2uox.r-hbs49y.r-1h0z5md.r-1jgb5lz.r-13qz1uu.r-ymttw5.r-1ye8kvj > div > div:nth-child(n) > div > div.css-175oi2r.r-1habvwh.r-1loqt21.r-1ny4l3l > div > div.css-175oi2r.r-1habvwh.r-13awgt0 > div > div > div > div > div > div > div > div.css-175oi2r.r-adacv.r-1udh08x.r-1867qdf.r-o298n2.r-o7ynqc.r-6416eg.r-1ny4l3l.r-1loqt21 {
+    box-shadow: rgb(40, 39, 38) 0px 0px 0px 2px, rgb(16, 15, 15) 0px 4px 6px -1px, rgba(255, 255, 255, .34) 0px 1px 0px inset;
+}
+/* Hide the "Subscribe to Premium" section */
+.css-175oi2r.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x.r-g6ijar.r-74htps aside[aria-label="Subscribe to Premium"] {
+    display: none;
+}
+/*Hides Right Panel*/
+.css-175oi2r.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x.r-g6ijar.r-74htps {
+    display: none;
+}
+/*Hides footer*/
+.r-18u37iz.r-1w6e6rj.r-ymttw5 {
+    display: none;
+}
+/* Removes border along the left panels on home. */
+.css-175oi2r.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x.r-g6ijar.r-74htps {
+    background-color: var(--custom-bg1);
+    border: none;
+}
+
+div[class^="css-175oi2r"][class*=" r-1awozwy r-aqfbo4 r-yfoy6g r-18u37iz r-1h3ijdo r-6gpygo r-15ysp7h r-1xcajam r-ipm5af r-136ojw6 r-1hycxz"] {
+    top: 12px;
+}
+
+
+/*TIMELINE BACKGGROUND*/
+.r-yfoy6g {
+    background-color: var(--custom-bg);
+}
+
+/* Navbar color with transparency */
+.r-ii8lfi {
+    background-color: rgba(16, 15, 15, .82);
+}
+
+/* Additional background and border color customizations */
+.r-8erxvq,
+.r-kuekak {
+    background: var(--custom-bg1);
+}
+
+.r-18bvks7 {
+    border-color: var(--custom-bg1);
+}
+
+.r-1ila09b {
+    border-bottom-color: var(--custom-bg1);
+}
+
+.r-l5o3uw,
+.r-1waj6vr {
+    background-color: var(--custom-hl) !important;
+}
+
+.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-16dba41.r-5njf8e .css-1qaijid.r-bcqeeo.r-qvutc0.r-poiln3 {
+    color: var(--custom-hl) !important;
+}
+
+svg path[d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"] {
+    fill: var(--custom-hl) !important;
+}
+
+.css-175oi2r[data-testid="toolBar"] .css-1rynq56 svg {
+    fill: var(--custom-hl) !important;
+}
+
+.css-175oi2r.r-16y2uox.r-1wbh5a2.r-1777fci .css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-q4m81j.r-a023e6.r-rjixqe.r-16dba41 .css-1qaijid.r-bcqeeo.r-qvutc0.r-poiln3 {
+    color: var(--custom-/* Combine selectors for display: none */
+    .r-6koalj:nth-child(5), .r-6koalj:nth-child(6), .r-6koalj:nth-child(7), .r-6koalj:nth-child(8) {
+        display: none;
+    }
+    /* Spacing for specific element */
+    .r-1hycxz:nth-child(1) {
+        top: 10px;
+    }
+    /* Base body styling with custom background color and text color */
+    body, p, .r-yfoy6g {
+        background-color: var(--custom-bg) !important;
+        color: rgb(206, 205, 195);
+    }
+    /* Navbar color with transparency */
+    .r-ii8lfi {
+        background-color: rgba(16, 15, 15, .82);
+    }
+    /* Additional background and border color customizations */
+    .r-8erxvq, .r-kuekak, .r-18bvks7, .r-1ila09b {
+        background: var(--custom-bg1);
+        border-color: var(--custom-bg1);
+        border-bottom-color: var(--custom-bg1);
+    }
+    /* Highlight background color for specific elements */
+    .r-l5o3uw, .r-1waj6vr, .r-1kihuf0 {
+        background-color: var(--custom-hl) !important;
+    }
+    /* Highlight text color for specific elements */
+    .css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-16dba41.r-5njf8e .css-1qaijid.r-bcqeeo.r-qvutc0.r-poiln3, svg path[d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"], .css-175oi2r[data-testid="toolBar"] .css-1rynq56 svg, .css-175oi2r.r-16y2uox.r-1wbh5a2.r-1777fci .css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-q4m81j.r-a023e6.r-rjixqe.r-16dba41 .css-1qaijid.r-bcqeeo.r-qvutc0.r-poiln3 {
+        color: var(--custom-hl) !important;
+    }
+    /* Unlike button styles */
+    [data-testid="unlike"] svg, [data-testid="unlike"] .css-1qaijid {
+        fill: rgb(209, 77, 65);
+        /* Replace with the color for the unliked state */
+        color: rgb(209, 77, 65);
+        /* Replace with the color for the text in the liked state */
+    }
+    /* Tweet text color */
+    [data-testid="tweetText"] {
+        color: rgb(206, 205, 195) !important;
+        /* Replace with the color you want */
+    }
+    [data-testid="unlike"] svg {
+        fill: rgb(209, 77, 65);
+        /* Replace with the color for the unliked state */
+    }
+    [data-testid="unlike"] .css-1qaijid {
+        color: rgb(209, 77, 65);
+        /* Replace with the color for the text in the liked state */
+    }
+    [data-testid="tweetText"] {
+        color: rgb(206, 205, 195)!important;
+        /* Replace with the color you want */
+    }
+    div.css-175oi2r.r-1wbh5a2.r-dnmrzs a.css-175oi2r.r-1wbh5a2.r-dnmrzs.r-1ny4l3l.r-1loqt21 div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-b88u0q.r-1awozwy.r-6koalj.r-1udh08x.r-3s2u2q span.css-1qaijid.r-dnmrzs.r-1udh08x.r-3s2u2q.r-bcqeeo.r-qvutc0.r-poiln3 span.css-1qaijid.r-bcqeeo.r-qvutc0.r-poiln3 {
+        /* Your styles here */
+        color: rgb(206, 205, 195);
+        /* Example style */
+    }
+    /* Target the Home icon and text */
+    [data-testid="AppTabBar_Home_Link"] svg, [data-testid="AppTabBar_Home_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Explore icon and text */
+    [data-testid="AppTabBar_Explore_Link"] svg, [data-testid="AppTabBar_Explore_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Notifications icon and text */
+    [data-testid="AppTabBar_Notifications_Link"] svg, [data-testid="AppTabBar_Notifications_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Messages icon and text */
+    [data-testid="AppTabBar_DirectMessage_Link"] svg, [data-testid="AppTabBar_DirectMessage_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Lists icon and text */
+    [data-testid="AppTabBar_Lists_Link"] svg, [data-testid="AppTabBar_Lists_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Bookmarks icon and text */
+    [data-testid="AppTabBar_Bookmarks_Link"] svg, [data-testid="AppTabBar_Bookmarks_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Premium+ icon and text */
+    [data-testid="AppTabBar_PremiumPlus_Link"] svg, [data-testid="AppTabBar_PremiumPlus_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Communities icon and text */
+    [data-testid="AppTabBar_Communities_Link"] svg, [data-testid="AppTabBar_Communities_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Verified Orgs icon and text */
+    [data-testid="AppTabBar_VerifiedOrgs_Link"] svg, [data-testid="AppTabBar_VerifiedOrgs_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the Profile icon and text */
+    [data-testid="AppTabBar_Profile_Link"] svg, [data-testid="AppTabBar_Profile_Link"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the More button */
+    [data-testid="AppTabBar_More_Menu"] svg, [data-testid="AppTabBar_More_Menu"] span {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the text within the <a> element and set the color */
+    a[href="/home"][aria-selected="true"] span.css-1qaijid {
+        color: rgb(206, 205, 195);
+    }
+    /* Target the SVG icon within the <a> element and set the color */
+    div.css-175oi2r.r-1ila09b.r-rull8r.r-qklmqi.r-1777fci.r-1pn2ns4 a[href="/home/pinned/edit"] svg {
+        fill: rgb(206, 205, 195);
+    }
