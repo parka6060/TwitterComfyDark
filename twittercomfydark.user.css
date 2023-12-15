@@ -1,18 +1,18 @@
 /* ==UserStyle==
-@name Twitter Comfy Dark
-@namespace https://github.com/parka6060/TwitterComfyDark
-@description Less Clutter & Comfy Darkmode using Flexoki
-@version 0.0.0
-@updateURL https://raw.githubusercontent.com/parka6060/TwitterComfyDark/main/twittercomfydark.user.css
-@homepageURL https://raw.githubusercontent.com/parka6060/TwitterComfyDark/
-@supportURL https://raw.githubusercontent.com/parka6060/TwitterComfyDark/issues
-@author eninabox.art
-@license GNU-V3.0
-@match *://twitter.com/*
-==/UserStyle== */
-@-moz-document domain("twitter.com")
+@name           TWitter Comfy Dark
+@author         eninabox.art
+@description    Comfy Twitter Dark Theme
+@namespace      https://github.com/parka6060/TwitterComfyDark
+@supportURL     https://github.com/parka6060/TwitterComfyDark/issues
+@version        2.0.0
+@license        MIT
+@preprocessor   stylus
 
-/*Custom Color Scheme*/
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+
+   /*Custom Color Scheme*/
 :root {
     --custom-bg: rgb(16, 15, 15);
     --custom-bg1: rgb(40, 39, 38);
@@ -297,3 +297,4 @@ svg path[d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 2
     div.css-175oi2r.r-1ila09b.r-rull8r.r-qklmqi.r-1777fci.r-1pn2ns4 a[href="/home/pinned/edit"] svg {
         fill: rgb(206, 205, 195);
     }
+}
