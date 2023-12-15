@@ -10,7 +10,7 @@
 @license GNU-V3.0
 @match *://twitter.com/*
 ==/UserStyle== */
-
+@-moz-document domain("twitter.com")
 
 /*Custom Color Scheme*/
 :root {
