@@ -27,244 +27,154 @@ Thank you to stephango.com/flexoki for the Flexoki Dark Theme.
 @var checkbox hideWhoToFollow "Hide Who to Follow" 1
 ==/UserStyle== */
 @-moz-document domain("twitter.com") {
+  i=!important;
   if comfyDark {
-    root {
-      --black: rgb(16, 15, 15); //bg
-      --base-950: rgb(28, 27, 26); //bg2
-      --base-900: rgb(40, 39, 38); //ui
-      --blue-600: rgb(32, 94, 166);
-    }
+      :root {
+          --black: rgb(16, 15, 15);
+          --base-900: #282726;
+          --base-850: #343331;
+          --text: rgb(206, 205, 195)
+          --text-2: rgb(135, 133, 128);
+      }
+              [data-testid="SearchBox_Search_Input_label"]{
+          background: var(--base-900) i;
+          border-radius: 30px;    
+      }
+      #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(n) > div > aside > div.css-175oi2r.r-1wtj0ep.r-ymttw5.r-1f1sjgu.r-1ny4l3l > h2 > div.css-1rynq56.r-8akbws.r-krxsd3.r-dnmrzs.r-1udh08x.r-bcqeeo.r-qvutc0.r-1qd0xha.r-adyw6z.r-135wba7.r-1vr29t4.r-1kihuf0 > span
+      #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(n) > div > section > div > div > div:nth-child(n) > div > div > h2 > div.css-1rynq56.r-8akbws.r-krxsd3.r-dnmrzs.r-1udh08x.r-bcqeeo.r-qvutc0.r-1qd0xha.r-adyw6z.r-135wba7.r-1vr29t4.r-1kihuf0 > span{
+          color:var(--text) i;
+      }
+      .r-yfoy6g,
+      /*timeline*/
+      body {
+          background-color: var(--black) i;
+      }
+      /* timeline tab transparency */
+      .r-ii8lfi {
+          background-color: rgba(16, 15, 15, .82) i;
+      }
+      .css-175oi2r.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x.r-g6ijar.r-74htps {
+          background-color: var(--base-900) i;
+          border: none;
+          padding: 2px
+      }
+      .r-kuekak {
+          background: var(--base-850) i;
+      }
+      .r-18bvks7 {
+          border-color: var(--base-850) i;
+      }
+      .r-1ila09b {
+          border-bottom-color: var(--base-850) i;
+      }
+      /*    text      */
+      [data-testid="tweet"] span {
+          color: var(--text);
+      }
+      div.css-175oi2r a[role="link"] div.css-175oi2r svg {
+          fill: var(--text);
+      }
+      div.css-175oi2r a[role="link"] div.css-175oi2r span.css-1qaijid {
+          color: var(--text);
+      }
+      div[data-testid="AppTabBar_More_Menu"] svg {
+          fill: var(--text);
+      }
+      div[data-testid="AppTabBar_More_Menu"] span.css-1qaijid {
+          color:var(--text) ;
+      }
+      div.css-175oi2r.r-18u37iz.r-1wbh5a2.r-13hce6t > div > div.css-175oi2r.r-1wbh5a2.r-dnmrzs > a > div > span{
+          color:var(--text-2) i;
+      }
+      /* Highlighted Text */
+      a[role="tab"][aria-selected="true"] .css-1qaijid {
+          color: var(--text);
+      }
+
+      /* Unhighlighted Text */
+      a[role="tab"][aria-selected="false"] .css-1qaijid {
+          color: var(--text-2);
+      }
+
   }
   /*TOGGLE NAV*/
   [data-testid="AppTabBar_Home_Link"] {
-    display: none if hideHome;
+      display: none if hideHome;
   }
   [data-testid="AppTabBar_Explore_Link"] {
-    display: none if hideExplore;
+      display: none if hideExplore;
   }
   [data-testid="AppTabBar_Explore_Link"] {
-    display: none if hideExplore;
+      display: none if hideExplore;
   }
   [data-testid="AppTabBar_DirectMessage_Link"] {
-    display: none if hideMessages;
+      display: none if hideMessages;
   }
   [aria-label="Grok"] {
-    display: none if hideGork;
+      display: none if hideGork;
   }
   [aria-label="Lists"] {
-    display: none if hideLists;
+      display: none if hideLists;
   }
   [aria-label="Bookmarks"] {
-    display: none if hideBookmarks;
+      display: none if hideBookmarks;
   }
   [aria-label="Premium"] {
-    display: none if hidePremium;
+      display: none if hidePremium;
   }
   [aria-label="Premium+"] {
-    display: none if hidePremiumPlus;
+      display: none if hidePremiumPlus;
   }
   [aria-label="Communities"] {
-    display: none if hideCommunities;
+      display: none if hideCommunities;
   }
   [aria-label="Verified Orgs"] {
-    display: none if hideVerifiedOrgs;
+      display: none if hideVerifiedOrgs;
   }
   [aria-label="Profile"] {
-    display: none if hideProfile;
+      display: none if hideProfile;
   }
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3),
   [aria-label="Subscribe to Premium"] {
-    display: none if hideUpgradeAd;
+      display: none if hideUpgradeAd;
+
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(4) {
-    display: none if hideWhatsHappening;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(4) {
+      display: none if hideWhatsHappening;
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(5) {
-    display: none if hideWhoToFollow;
-  }
-  /*Hide Border On Right Panel*/
-  .css-175oi2r.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x.r-g6ijar.r-74htps {
-    border: none;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(5) {
+      display: none if hideWhoToFollow;
   }
   [aria-label="Footer"] {
-    display: none;
+      display: none;
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-1awozwy.r-aqfbo4.r-yfoy6g.r-18u37iz.r-1h3ijdo.r-6gpygo.r-15ysp7h.r-1xcajam.r-ipm5af.r-136ojw6.r-1hycxz {
-    margin-top: 12px !important;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div.css-175oi2r.r-1awozwy.r-aqfbo4.r-yfoy6g.r-18u37iz.r-1h3ijdo.r-6gpygo.r-15ysp7h.r-1xcajam.r-ipm5af.r-136ojw6.r-1hycxz {
+      margin-top: 12px i;
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(3) {
-    margin-top: 12px !important;
-    margin-bottom: 12px !important;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3) {
+      margin-top: 12px i;
+      margin-bottom: 12px i;
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(4) {
-    margin-top: -12px if hideUpgradeAd;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(4) {
+      margin-top: -12px if hideUpgradeAd;
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(3)
-    > aside
-    > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-adyw6z.r-135wba7.r-1vr29t4
-    > span,
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(3)
-    > aside
-    > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-16dba41
-    > span {
-    display: none;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3) > aside > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-adyw6z.r-135wba7.r-1vr29t4 > span,
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3) > aside > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-16dba41 > span {
+      display: none;
   }
   /* Target the parent element for the first text */
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(3)
-    > aside
-    > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-adyw6z.r-135wba7.r-1vr29t4::after {
-    content: "Comfy Twitter v1";
-    display: block;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3) > aside > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-adyw6z.r-135wba7.r-1vr29t4::after {
+      content: "Comfy Twitter v1";
+      color:var(--text) i;
+      display: block;
   }
   /* Target the parent element for the second text */
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(3)
-    > aside
-    > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-16dba41::after {
-    content: "This userstyle is semi-actively maintained by @eninabox. Shoot me a message if you run into any issues.";
-    display: block;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3) > aside > div.css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-a023e6.r-rjixqe.r-16dba41::after {
+      content: "This userstyle is semi-actively maintained by @eninabox. Shoot me a message if you run into any issues.";
+      color:var(--text) i;
+      display: block;
   }
-  #react-root
-    > div
-    > div
-    > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz
-    > main
-    > div
-    > div
-    > div
-    > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz
-    > div
-    > div.css-175oi2r.r-1hycxz.r-1xcajam
-    > div
-    > div
-    > div
-    > div:nth-child(3)
-    > aside
-    > a {
-    display: none;
+  #react-root > div > div > div.css-175oi2r.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > div.css-175oi2r.r-aqfbo4.r-fif9oo.r-1hycxz > div > div.css-175oi2r.r-1hycxz.r-1xcajam > div > div > div > div:nth-child(3) > aside > a {
+      display: none;
   }
 }
