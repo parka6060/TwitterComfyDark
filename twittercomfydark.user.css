@@ -185,7 +185,7 @@ svg path[d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 2
 }
 
 .css-175oi2r.r-16y2uox.r-1wbh5a2.r-1777fci .css-1rynq56.r-bcqeeo.r-qvutc0.r-1qd0xha.r-q4m81j.r-a023e6.r-rjixqe.r-16dba41 .css-1qaijid.r-bcqeeo.r-qvutc0.r-poiln3 {
-    color: var(--custom-/* Combine selectors for display: none */
+    color: var(--custom-bg);/* Combine selectors for display: none */
     .r-6koalj:nth-child(5), .r-6koalj:nth-child(6), .r-6koalj:nth-child(7), .r-6koalj:nth-child(8) {
         display: none;
     }
